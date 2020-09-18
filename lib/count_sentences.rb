@@ -28,7 +28,7 @@ class String
 
   def count_sentences
     string_split = self.split
-    puts string_split.count {   }
+    puts string_split.count {|s| s =~ [\.!?]$   }
     #.scan(/[\.?!]/)
   end
 end
